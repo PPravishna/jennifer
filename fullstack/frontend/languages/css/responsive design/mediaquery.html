@@ -7,18 +7,38 @@
     <title>Document</title>
 </head>
 <style>
-    body{
+    
+@media(max-width:500px){
+     .example{
+        background-color: red;
+        display:absolute;
+     }
+}
+@media(min-width:501px) {
+    .example{
         background-color: blue;
-    }
-@media screen and (min-width:500px){
-    body{
-        background-color: brown;
+        display: block;
     }
     
-}
+    }
+    @media(min-width:900px) {
+        .example{
+background-color: coral;
+display: block;
+        }
+        }
+        @media(min-width:1200px){
+            .example{
+                background-color: fuchsia;
+                display: absolute;
+            }
+        }
+        
+    
 </style>
 <body>
-    <h1>Resize the browser window to see the effect</h1>
-    <p>the media query will only apply if the media type screen and the viewport is 500px wide or wider.</p>
+    <h1>Typical media query breakpoints</h1>
+    <p class="example">Resize the browser window to see the background color of the paragraph 
+        changes on different screen sizes.</p>
 </body>
 </html>
