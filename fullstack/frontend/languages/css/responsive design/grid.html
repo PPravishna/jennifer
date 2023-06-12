@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        font-size: 40px;
+        color: white;
+        display: grid;
+        grid-gap: 15px;
+        /*grid-template-rows: 200px 200px 200px;
+        grid-template-columns: 200px 200px 200px 200px;*/
+        /*grid-template-rows: repeat(3,200px);
+        grid-template-columns: repeat(4,200px);*/
+       /* grid-template-rows:repeat(3,200px) ;
+        grid-template-columns: repeat(3,1fr);*/
+        grid-template-rows:repeat(3,200px) ;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        @media(max-width:200px){
+            .item{
+                background-color:red;
+                display: block;
+            }
+       }
+       @media(min-width:400px) {
+        .item{
+            background-color: blue;
+            display: absolute;
+        }
+       }
+       @media(min-width: 700px){
+        .item{
+            background-color: green;
+            display: block;
+        }
+       }
+       @media(min-width: 1000px){
+        .item{
+            background-color: yellow;
+            display: block;
+            color: black;
+        }
+       }
+       @media(min-width: 1200px){
+        .item{
+            background-color: cyan;
+            display: block;
+            color: black;
+        }
+       }
+    }
+    .item{
+        background-color:deeppink;
+        border: 2px dashed blue;
+        padding: 60px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item" id="item-1">HTML</div>
+        <div class="item" id="item-2">CSS</div>
+        <div class="item" id="item-3">JAVA</div>
+        <div class="item" id="item-4">Python</div>
+        <div class="item" id="item-5">SQL</div>
+        <div class="item" id="item-6">PHP</div>
+        <div class="item" id="item-7">Django</div>
+        <div class="item" id="item-8">AWS</div>
+        <div class="item" id="item-9">RUBY</div>
+    </div>
+</body>
+</html>
