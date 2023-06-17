@@ -1,0 +1,42 @@
+.container-fluid{
+    text-align: center;
+}
+
+.nav-link{
+    position: relative;
+    color: white;
+}
+
+.nav-link::after{
+    content:'';
+    opacity:0;
+    transition: all 0.2;
+    height: 2px;
+    width: 100%;
+    background-color:gold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /*text-decoration-color: red;
+    -webkit-text-fill-color: red;*/
+}
+
+.nav-link:hover::after{
+    opacity: 1;
+}
+
+.container-fluid{
+    background-color: black;
+}
+
+.nav-link:hover{
+    color: white !important
+}
+
+.nav-link{
+    padding: 5px;
+    margin-right: 25px;
+
+
+    color: white !important
+}
