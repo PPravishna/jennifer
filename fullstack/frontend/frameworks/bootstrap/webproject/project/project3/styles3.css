@@ -40,3 +40,31 @@
 
     color: white !important
 }
+
+.parent{
+    position: relative;
+    width: 500px;
+ }
+ .img{
+   width:500px;
+ }
+ .top-left{
+    position: absolute;
+    left:0;
+    top:0;
+ }
+ .top-right{
+    position: absolute;
+    right:0;
+    top:0;
+ }
+ .bottom-left{
+    position: absolute;
+    left:0;
+    bottom:0;
+ }
+ .bottom-right{
+    position: absolute;
+    right:0;
+    bottom:0;
+ }
