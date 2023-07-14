@@ -1,0 +1,17 @@
+<h1>Immediately Invoked Function Expression</h1>
+<p>
+  The primary purpose of an IIFE is to preserve a private scope within your
+  code.
+</p>
+
+<script>
+  //This is syntax
+  //   (() => {
+  //     console.log("iam called");
+  //   })();
+
+  (function () {
+    var message = "hello, iam inside a iffe!";
+    console.log(message);
+  })();
+</script>

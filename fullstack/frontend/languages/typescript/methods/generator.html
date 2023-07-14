@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function icecream() {
+        return "icecream";
+      }
+      //   console.log("person one", icecream());
+      //   console.log("person two", icecream());
+      //   console.log("person three", icecream());
+
+      //   let repeater = icecream();
+      //   console.log(repeater);
+      //   console.log(repeater);
+      //   console.log(repeater);
+
+      function* vishnuicecreamGiver() {
+        yield "icecream one";
+        yield "icecream two";
+        yield "icecream three";
+      }
+
+      //   console.log("person one", vishnuicecreamGiver().next().value);
+      //   console.log("person two", vishnuicecreamGiver().next().value);
+      //   console.log("person three", vishnuicecreamGiver().next().value);
+
+      let Pravishna = vishnuicecreamGiver();
+      console.log(Pravishna.next());
+      console.log(Pravishna.next());
+      console.log(Pravishna.next());
+
+      console.log(Pravishna.next());
+    </script>
+  </body>
+</html>
