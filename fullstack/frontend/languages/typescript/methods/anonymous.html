@@ -1,3 +1,19 @@
+<h1>Anonymous function</h1>
+<p>Anonymous function is a function that does not have a name.</p>
+<h3>Syntax</h3>
+<pre>
+  const functionName=function(parameters){
+    //function body
+  };
+</pre>
+
+<p>
+  Anonymous functions are used in the scenarious where you need a function for a
+  specific task,but don't need to reuse it elsewhere.
+</p>
+
+<h4>For example open inspect</h4>
+
 <script>
   function abc() {
     console.log("iam normal");
@@ -8,4 +24,9 @@
     console.log("iam normal");
   };
   fun();
+
+  const add = function (a, b) {
+    return a + b;
+  };
+  console.log("Iam anonymous function");
 </script>
