@@ -1,0 +1,38 @@
+<script src="./obj.js"></script>
+
+<script>
+  let fan = { wings: 3, motor: 1, color: "red" };
+  let samsung = { battery: { company: "xyz", materials: { name: "lithium" } } };
+  console.log(samsung.battery.materials.name);
+  fan.capacitor = 1;
+  console.log(fan);
+
+  //   const person = {
+  //     firstName: "John",
+  //     lastName: "Doe",
+  //     age: 30,
+  //     eyecolor: "blue",
+  //   };
+  //   console.log(person);
+
+  //   const person1 = new object();
+  //   person1.firstName = "john";
+  //   person1.lastName = "doe";
+  //   person1.age = 40;
+  //   person1.eyecolor = "blue";
+
+  //   console.log(person1);
+
+  const person = {
+    firstName: "Vishnu",
+    lastName: "Vardhan",
+    age: 21,
+    eyecolor: "black",
+  };
+
+  let firstName = person.firstName;
+  let lastName = person["lastName"];
+  //   let fullName = person.fullName();
+
+  console.log(person);
+</script>

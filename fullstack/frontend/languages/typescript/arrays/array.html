@@ -1,0 +1,38 @@
+<h1>Array</h1>
+
+<p>An array is a special variable that can hold more than one value.</p>
+<p>
+  It is an ordered list of values, each of which is called an element and is
+  specified by an index.
+</p>
+<p>
+  An array can hold values of mixed types such as number,string,boolean,null and
+  even other arrays.
+</p>
+
+<h2>Syntax</h2>
+<pre>
+    <ol>
+        <li><b>Array literal:</b></li>
+        const arrayName= [value1,value2,....,valueN];
+        <li><b>Creating an instance of Array directly(using new keyword):</b></li>
+        const arrayName=new Array(element0,element1,.....,elementN);
+        <li><b>Using array constructor(using new keyword):</b></li>
+        const arrayName=new Array(arrayLength);
+    </ol>
+ </pre>
+
+<script>
+  let a = "apple";
+  let b = "ball";
+  let c = "cat";
+  let mydata = ["apple", "ball", "cat"];
+  let [a1, b1, c1] = mydata;
+  console.log(mydata[0], a1);
+  console.log(mydata[1], b1);
+  console.log(mydata[2], c1);
+
+  mydata.map((data) => {
+    console.log(data);
+  });
+</script>
