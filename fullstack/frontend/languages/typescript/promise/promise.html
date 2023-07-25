@@ -1,0 +1,15 @@
+<script>
+  let pravishna = new Promise((fullfill, notfullfill) => {
+    setTimeout(() => {
+      console.log("iam working");
+      //fullfill("iam giving treat");
+      notfullfill("no treat");
+    }, 2000);
+  });
+  pravishna.then((value) => {
+    console.log(value);
+  });
+  pravishna.catch((value) => {
+    console.log(value);
+  });
+</script>

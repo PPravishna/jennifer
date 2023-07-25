@@ -1,0 +1,11 @@
+<script>
+  async function pro() {
+    let pravishna = new Promise((f, nf) => {
+      f("got full fill");
+    });
+    pravishna = await pravishna;
+    console.log(pravishna);
+    return "abc";
+  }
+  console.log(pro());
+</script>
