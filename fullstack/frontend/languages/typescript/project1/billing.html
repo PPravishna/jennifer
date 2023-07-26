@@ -1,0 +1,17 @@
+<script>
+  let p1 = 30;
+  let p2 = 70;
+  let p3 = new Promise((f, nf) => {
+    setTimeout(() => {
+      f(400);
+    }, 1000);
+  });
+
+  let totalBill = () => {
+    p3.then((val) => {
+      console.log(p1 + p2 + val);
+    });
+    return;
+  };
+  console.log(totalBill());
+</script>
