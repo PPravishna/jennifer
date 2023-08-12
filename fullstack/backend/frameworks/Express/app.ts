@@ -13,21 +13,25 @@ let endPoint = require("./src/routes/index");
 app1.use("/api", endPoint.LoginApi);
 app1.use("/api", endPoint.RegisterApi);
 
-app1.route("/api/register").get((req: any, res: any) => {
-    res.send("get register api");
-  })
 
-  .post((req: any, res: any) => {
-    res.send("get register api");
-  })
 
-  .put((req: any, res: any) => {
-    res.send("get register api");
-  })
 
-  .delete((req: any, res: any) => {
-    res.send("get register api");
-  });
+
+// app1.route("/api/register").get((req: any, res: any) => {
+//     res.send("get register api");
+//   })
+
+//   .post((req: any, res: any) => {
+//     res.send("get register api");
+//   })
+
+//   .put((req: any, res: any) => {
+//     res.send("get register api");
+//   })
+
+//   .delete((req: any, res: any) => {
+//     res.send("get register api");
+//   });
 
 
 
