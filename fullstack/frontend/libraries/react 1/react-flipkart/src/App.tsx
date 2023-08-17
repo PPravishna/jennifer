@@ -4,10 +4,14 @@ import { Lessons } from "./pages/lessons/Lessons.page"
 import { Login } from "./pages/login/Login.page"
 import { Register } from "./pages/register/Register.page"
 import { MyNavbar } from "./components/navbar/MyNavbar.com"
+import { Allroutes } from "./routes"
 
 export let App:React.FC<{}>=()=>{
   return <div>
-    <MyNavbar/>
+    <BrowserRouter>
+    <Allroutes/>
+    </BrowserRouter>
+    {/* <MyNavbar/>
     <BrowserRouter
     >
 <Routes>
@@ -19,7 +23,7 @@ export let App:React.FC<{}>=()=>{
     </BrowserRouter>
   
     
-    
+     */}
     
   </div>
 }
