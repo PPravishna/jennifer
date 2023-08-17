@@ -4,6 +4,12 @@ let app1 = express();
 let cors1 = require("cors");
 app1.use(cors1());
 let path1 = require("path");
+
+let bodyparser= require('body-parser')
+app1.use(bodyparser.urlencoded({extended:false}))
+app1.use(bodyparser.json())
+
+
 app1.use(express.static(path1.join(__dirname, "public/images")));
 app1.use(express.static(path1.join(__dirname, "public/videos")));
 console.log(path1.join(__dirname, "public/image"));
@@ -13,7 +19,9 @@ let endPoint = require("./src/routes/index");
 app1.use("/api", endPoint.LoginApi);
 app1.use("/api", endPoint.RegisterApi);
 
-
+app1.get('/abc',(req:any,res:any)=>{
+    res.send("hello")
+})
 
 
 
@@ -70,6 +78,6 @@ app1.use("/api", endPoint.RegisterApi);
 //   res.send("iam very secure");
 // });
 
-// app.listen(8023, () => {
-//   console.log("server is running on http://localhost:8023/");
-// });
+app1.listen(8023, () => {
+  console.log("server is running on http://localhost:8023/");
+});
