@@ -1,0 +1,14 @@
+{
+  "name": "datatypes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node app1.ts",
+    "hoc": "nodemon  app1.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
