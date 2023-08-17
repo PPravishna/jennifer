@@ -1,5 +1,6 @@
 import {Outlet} from 'react-router-dom';
 import { MyNavbar } from '../components/navbar/MyNavbar.com';
+import { Lessons } from '../pages/lessons/Lessons.page';
 
 export let LessonsRoutes={
     path:'/lessons',
@@ -7,7 +8,7 @@ export let LessonsRoutes={
     children:[
         {
             path:'all',
-            element:<h1>Iam homepage</h1>
+            element:<Lessons/>
         },
         {
             path:'login',

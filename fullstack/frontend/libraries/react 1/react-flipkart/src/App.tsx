@@ -7,9 +7,10 @@ import { MyNavbar } from "./components/navbar/MyNavbar.com"
 import { Allroutes } from "./routes"
 
 export let App:React.FC<{}>=()=>{
-  return <div>
+  return <>
     <BrowserRouter>
     <Allroutes/>
+  
     </BrowserRouter>
     {/* <MyNavbar/>
     <BrowserRouter
@@ -25,5 +26,5 @@ export let App:React.FC<{}>=()=>{
     
      */}
     
-  </div>
+  </>
 }
