@@ -3,6 +3,8 @@ package Methods;
 import java.util.function.Consumer;
 
 public class TypesOfMethods {
+	public String t4="iam from another package";
+	
 public static void main(String[] args) {
 	Human vishnu =new Human("yes");
 	System.out.println(vishnu.abc());
