@@ -12,10 +12,12 @@ public class methodOverriding {
 		 }
 	 }
 	public static void main(String[] args) {
-		// MethodOverriding refer to providing a new implementation for
-		// a method in a subclass that is already defined in its superclass.
-		//When you override a method, the method in the subclass should 
-		//have the same method signature as the one in the superclass.
+		
+// Method Overriding refer to providing a new implementation for
+// a method in a subclass that is already defined in its superclass.
+//When you override a method, the method in the subclass should 
+//have the same method signature as the one in the superclass.
+		
 		// It is a runtime(dynamic) polymorphism concept.
 
 	}
