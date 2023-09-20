@@ -1,6 +1,7 @@
 package Methods;
 
 public class methodOverloading {
+	
 	public int add(int a, int b) {
 		return a+b;
 		
@@ -13,7 +14,7 @@ public class methodOverloading {
 		//in the same class with the same name but different parameter
 		//lists.
 		
-		//Overloading is a compile-time(static) polymorphism concept.
+		//It is a compile-time polymorphism.
 
 
 	}
