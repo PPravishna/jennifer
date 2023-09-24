@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    
+    let myObj=[{name:"vishnu", age:"20"},{name:"Pravishna", age:"25"},{name:"searching", age:"50"},{name:"searching123", age:"90"}]
+
+
+    let copiedArray = [];
+
+myObj.forEach((obj) => {
+  copiedArray.push({
+    name: obj.name,
+    age: parseInt(obj.age)
+  });
+});
+
+console.log(copiedArray)
+// (or)
+// let copiedArray = myObj.map(obj => {
+//     return {
+//       name: obj.name,
+//       age: parseInt(obj.age)
+//     };
+//   });
+  
+//   console.log(copiedArray);
+
+  </script>
+</body>
+</html>
