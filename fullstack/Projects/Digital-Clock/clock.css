@@ -1,0 +1,46 @@
+.heading {
+    text-align: center;
+    margin-bottom:20px ;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #451952;
+}
+
+.clock {
+    background-color: #662549;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px #AE445A;
+    text-align: center;
+    width: 400px;
+}
+
+.clock:hover{
+    box-shadow: 0 0 10px #F39F5A;
+}
+
+.time {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.buttons button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #AE445A;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #F39F5A;
+}
+
